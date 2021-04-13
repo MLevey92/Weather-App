@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 10px, 10px;
+}
+
+.top-panel {
+    display: flex;
+}
+
+.city-panel {
+    width: 70%;
+}
+
+.temp-panel {
+    width: 30%;
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    opacity: .8;
+}
+
+button {
+    background-color: gray;
+    border: none;
+    margin: 15px 10px;
+    font-size: 16px;
+}
+
+#dropdown {
+    
+}
+
+hr {
+    margin: 0px;
+}
+
+.input-menu {
+    background-color: gray;
+    opacity: .8;
+    height: 0px;
+    transition-duration: .5s;
+}
+
+.input-menu.open-active {
+    height: 200px;
+    transition-duration: .5s;
+}
+
+.week-panel-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.day-panel-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    position: relative;
+    perspective: 500px;
+
+    transform: translateY(100%);
+}
+
+.day-panel-container.open-active {
+    transform: translateY(0);
+}
+
+/* Carousel */
+
+
+.week-panel {
+    background-color: gray;
+    opacity: .8;
+    border-radius: 8px;
+}
+
+.week-panel.active {
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    transform: scale(1);
+}
+
+.city-panel {
+    
+}
+
+.temp-panel {
+    
+}
+
+
+#hi {
+    color: rgb(255, 94, 0);
+}
+
+#low {
+    color: cyan;
+}
+
+.clearnight {
+    background-color: black;
+}
+
+.Fog, .Mist {
+    background: url('img/fog.jpeg');
+}
+
+.Drizzle, .Rain {
+    background-image: url('img/rain2.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.Clouds {
+    background-image: url('img/clouds.jpg');
+}
+
+.Clear {
+    background-image: url('img/clear.jpg');
+}

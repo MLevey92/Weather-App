@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+
+    <script src="callScript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="background-container">
+<div class="top-panel">
+    <div class="city-panel">
+        <h1 id="city"></h1>
+        <h4 id="date"></h4>
+        <h4 id="time"></h4>
+        <img class="icon" src="">
+        <p class="weather"></p>
+    </div>
+    <div class="temp-panel">
+        <p class="temp" style="font-size: 80px; margin: 0px; margin-top: 40px;"></p>
+        <span id="low"></span> <span> / </span> <span id="hi"></span>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div id="buttons">
+        <button class="todayButton">Today</button>
+        <button class="weekButton">Weekly</button>
+    </div>
+    <div class="dropdown">
+        <button class="fas fa-bars dropButton"></button>
+    </div>
+</nav>
+<hr>
+<div class="input-menu">
+    <form class="search-form">
+        <input type="text" class="search" placeholder="City">
+        <ul class="suggestions">
+            <li>Filter for a city</li>
+        </ul>
+    </form>
+</div>
+
+<div class="week-panel-container">
+    <div class="week-panel">
+        <p id="day0"></p>
+        <img id="d_icon0" src="">
+        <p id="d_temp0"></p>
+    </div>
+    <div class="week-panel">
+        <p id="day1"></p>
+        <img id="d_icon1" src="">
+        <p id="d_temp1"></p>
+    </div>
+    <div class="week-panel">
+        <p id="day2"></p>
+        <img id="d_icon2" src="">
+        <p id="d_temp2"></p>
+    </div>
+    <div class="week-panel">
+        <p id="day3"></p>
+        <img id="d_icon3" src="">
+        <p id="d_temp3"></p>
+    </div>
+    <div class="week-panel">
+        <p id="day4"></p>
+        <img id="d_icon4" src="">
+        <p id="d_temp4"></p>
+    </div>
+    <div class="week-panel">
+        <p id="day5"></p>
+        <img id="d_icon5" src="">
+        <p id="d_temp5"></p>
+    </div>
+    <div class="week-panel">
+        <p id="day6"></p>
+        <img id="d_icon6" src="">
+        <p id="d_temp6"></p>
+    </div>
+    
+</div>
+<div class="day-panel-container">
+    <div class="week-panel">
+        <p id="hour0"></p>
+        <img id="h_icon0" src="">
+        <p id="h_temp0"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour1"></p>
+        <img id="h_icon1" src="">
+        <p id="h_temp1"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour2"></p>
+        <img id="h_icon2" src="">
+        <p id="h_temp2"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour3"></p>
+        <img id="h_icon3" src="">
+        <p id="h_temp3"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour4"></p>
+        <img id="h_icon4" src="">
+        <p id="h_temp4"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour5"></p>
+        <img id="h_icon5" src="">
+        <p id="h_temp5"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour6"></p>
+        <img id="h_icon6" src="">
+        <p id="h_temp6"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour7"></p>
+        <img id="h_icon7" src="">
+        <p id="h_temp7"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour8"></p>
+        <img id="h_icon8" src="">
+        <p id="h_temp8"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour9"></p>
+        <img id="h_icon9" src="">
+        <p id="h_temp9"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour10"></p>
+        <img id="h_icon10" src="">
+        <p id="h_temp10"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour11"></p>
+        <img id="h_icon11" src="">
+        <p id="h_temp11"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour12"></p>
+        <img id="h_icon12" src="">
+        <p id="h_temp12"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour13"></p>
+        <img id="h_icon13" src="">
+        <p id="h_temp13"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour14"></p>
+        <img id="h_icon14" src="">
+        <p id="h_temp14"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour15"></p>
+        <img id="h_icon15" src="">
+        <p id="h_temp15"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour16"></p>
+        <img id="h_icon16" src="">
+        <p id="h_temp16"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour17"></p>
+        <img id="h_icon17" src="">
+        <p id="h_temp17"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour18"></p>
+        <img id="h_icon18" src="">
+        <p id="h_temp18"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour19"></p>
+        <img id="h_icon19" src="">
+        <p id="h_temp19"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour20"></p>
+        <img id="h_icon20" src="">
+        <p id="h_temp20"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour21"></p>
+        <img id="h_icon21" src="">
+        <p id="h_temp21"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour22"></p>
+        <img id="h_icon22" src="">
+        <p id="h_temp22"></p>
+    </div>
+    <div class="week-panel">
+        <p id="hour23"></p>
+        <img id="h_icon23" src="">
+        <p id="h_temp23"></p>
+    </div>
+
+</div>
+</main>
+
+<script src="script.js"></script>
+<script type="text/javascript" src="formScript.js"></script>
+</body>
