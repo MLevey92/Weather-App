@@ -9,6 +9,10 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+
     <script src="callScript.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,8 +34,7 @@
 
 <nav class="navbar">
     <div id="buttons">
-        <button class="todayButton">Today</button>
-        <button class="weekButton">Weekly</button>
+        <button class="todayButton">Format</button>
     </div>
     <div class="dropdown">
         <button class="fas fa-bars dropButton"></button>
@@ -39,15 +42,10 @@
 </nav>
 <hr>
 <div class="input-menu">
-    <form class="search-form">
-        <input type="text" class="search" placeholder="City">
-        <ul class="suggestions">
-            <li>Filter for a city</li>
-        </ul>
-    </form>
+
 </div>
 
-<div class="week-panel-container">
+<div class="week-panel-container open-active">
     <div class="week-panel">
         <p id="day0"></p>
         <img id="d_icon0" src="">
