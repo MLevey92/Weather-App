@@ -1,8 +1,10 @@
 const dropButton = document.querySelector('.dropButton');
 const todayButton = document.querySelector('.todayButton');
 const weekButton = document.querySelector('.weekButton');
+const weeks = document.querySelector('.week-panel-container');
 const slider = document.querySelector('.day-panel-container');
 const menu = document.querySelector('.input-menu');
+const form = document.querySelector('.search-form');
 
 function menuToggle() {
     console.log("Toggling Menu!");
@@ -13,12 +15,12 @@ function todayToggle() {
     console.log("Today Menu!");
     transitioning=true;
     slider.classList.toggle('open-active');
+    weeks.classList.toggle('open-active');
+    
+
     transitioning=false;
 }
 
-function weekToggle() {
-    console.log("Weekly Menu!");
-}
 
 //Slide day panels
 
